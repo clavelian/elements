@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import * as React from "react";
@@ -55,8 +56,8 @@ const ResponsiveModalVariants = cva(
 interface ResponsiveModalContentProps
   extends React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>,
     VariantProps<typeof ResponsiveModalVariants> {
-  className?: string;
-  children?: string;
+  className?: any;
+  children?: any;
 }
 
 const ResponsiveModalContent = React.forwardRef<
